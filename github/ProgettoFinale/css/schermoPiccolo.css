@@ -5,3 +5,10 @@
   .slider-wrapper .info {
     opacity: 0;
   }
+
+  html{
+    font-size: 86%;
+  }
+  p{
+    font-size: 1.1rem;
+  }
