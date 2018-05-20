@@ -1,3 +1,50 @@
 /* IL MIO FILE CSS CHE POI UNIRAI AL MAIN.CSS */
 
 /****** CONTACT US*******/
+
+.contactContainer {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.googleMap{
+    width: 100%;
+    height: 500px;
+    /*border-radius: 2px;
+    border: 1px solid #E32C2B;*/
+}
+
+.googleFrame {
+    width: 100%;
+    height: 100%;
+}
+
+/*div.titoloH1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    margin-top: 5%;
+    height: 70px;
+    border-bottom: #E32C2B solid 3px;
+    font-family: "Leixo";
+}*/
+
+.contactUsTitleheader {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    height: 70px;
+    border-bottom: #E32C2B solid 3px;
+    font-family: "Leixo";
+}
+
+.contactUsIntro {
+    width: 96%;
+    margin: 5% auto;
+}
+
+p.contactInfo {
+    font-size: 15px;
+    line-height: 6px;
+}
