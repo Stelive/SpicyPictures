@@ -586,10 +586,19 @@ div.Parallax1{
   height: 70%;
 }
 div.Parallax2{
-	background-image: url("../img/profilo.jpg");
+  background-image: url("../img/profilo_pedro.jpg");
+  width: 100%;
+  height: 70%;
 }
 div.Parallax3{
-	background-image: url("../img/profilo.jpg");
+  background-image: url("../img/profilo_mereu.jpg");
+  width: 100%;
+  height: 70%;
+}
+div.Parallax4{
+  background-image: url("../img/profilo_zocca.jpg");
+  width: 100%;
+  height: 70%;
 }
 
 div.containerDescrizione{
