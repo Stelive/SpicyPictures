@@ -35,8 +35,9 @@
     text-align: center;
     margin-top: 5%;
     height: 70px;
-    border-bottom: #E32C2B solid 3px;
+    /*border-bottom: #E32C2B solid 3px;*/
     font-family: "Leixo";
+    position: relative;
 }
 
 .contactUsIntro {
@@ -49,60 +50,32 @@ p.contactInfo {
     line-height: 6px;
 }
 
-/*.googleMap {
-    border-bottom:1px solid #000;
-    border-bottom-width: 1px;
-    -webkit-animation: increase 3s;
-    -moz-animation:    increase 3s; 
-    -o-animation:      increase 3s; 
-    animation:         increase 3s; 
-    animation-fill-mode: forwards;
-}
-  
-@keyframes increase {
-    100% {
-        border-bottom-width: 10px;
-    }
-}*/
 .googleMap {
     position: relative;
 }
-/*.googleMap:after {
-    content:""; 
-    background: #E32C2B; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    height: 0%; 
-    width: 3px;
-    -webkit-animation: increase 1.5s;
-    -moz-animation:    increase 1.5s; 
-    -o-animation:      increase 1.5s; 
-    animation:         increase 1.5s; 
-    animation-fill-mode: forwards;
-}*/
 
-/*.googleMap::before {
-    content:""; 
-    background: #E32C2B; 
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    height: 0%; 
-    width: 100%;
-    -webkit-animation: increase 1.5s;
-    -moz-animation:    increase 1.5s; 
-    -o-animation:      increase 1.5s; 
-    animation:         increase 1.5s; 
-    animation-fill-mode: forwards;
+.contactUsTitleheader::before {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    border-bottom:3px solid red;
+    width:0%;
+    text-align:center;
+    animation: line 2s linear forwards;
 }
-@keyframes increase {
-    100% {
-        height: 100%;
+@keyframes line {
+    from {
+        left:50%;
+        width:0%;
     }
-}*/
+    to {
+        left:0%;
+        width:100%;
+    }
+}
 
-.googleMap::after {
+.googleMap::before {
     content:"";
     position: absolute; 
     top: 0; 
@@ -112,14 +85,17 @@ p.contactInfo {
     border-left: 3px solid #E32C2B;
     border-right: 3px solid #E32C2B;
     /*width: 100%;*/
-    -webkit-animation: increase 1.5s;
-    -moz-animation:    increase 1.5s; 
-    -o-animation:      increase 1.5s; 
-    animation:         increase 1.5s; 
+    -webkit-animation: increase 2s;
+    -moz-animation:    increase 2s; 
+    -o-animation:      increase 2s; 
+    animation:         increase 2s; 
     animation-fill-mode: forwards;
 }
 @keyframes increase {
     100% {
         height: 100%;
+
     }
 }
+
+/*.contactUsTitleheader:hover + */
