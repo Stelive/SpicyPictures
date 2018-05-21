@@ -49,21 +49,77 @@ p.contactInfo {
     line-height: 6px;
 }
 
+/*.googleMap {
+    border-bottom:1px solid #000;
+    border-bottom-width: 1px;
+    -webkit-animation: increase 3s;
+    -moz-animation:    increase 3s; 
+    -o-animation:      increase 3s; 
+    animation:         increase 3s; 
+    animation-fill-mode: forwards;
+}
+  
+@keyframes increase {
+    100% {
+        border-bottom-width: 10px;
+    }
+}*/
 .googleMap {
     position: relative;
 }
-.googleMap:after {
-    content: '';
-    display: block;
-    border-left: 3px solid red;
-    /*border-bottom: 3px solid red;*/
-    width: 0;
-    position: absolute;
+/*.googleMap:after {
+    content:""; 
+    background: #E32C2B; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 0%; 
+    width: 3px;
+    -webkit-animation: increase 1.5s;
+    -moz-animation:    increase 1.5s; 
+    -o-animation:      increase 1.5s; 
+    animation:         increase 1.5s; 
+    animation-fill-mode: forwards;
+}*/
+
+/*.googleMap::before {
+    content:""; 
+    background: #E32C2B; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    height: 0%; 
+    width: 100%;
+    -webkit-animation: increase 1.5s;
+    -moz-animation:    increase 1.5s; 
+    -o-animation:      increase 1.5s; 
+    animation:         increase 1.5s; 
+    animation-fill-mode: forwards;
+}
+@keyframes increase {
+    100% {
+        height: 100%;
+    }
+}*/
+
+.googleMap::after {
+    content:"";
+    position: absolute; 
+    top: 0; 
+    right: 0;
     left: 0;
-    -webkit-transition: 1s ease;
-    transition: 1s ease;
-  }
-  
-  .googleMap:hover:after { 
-    width: 100%; 
-  }
+    height: 0%; 
+    border-left: 3px solid #E32C2B;
+    border-right: 3px solid #E32C2B;
+    /*width: 100%;*/
+    -webkit-animation: increase 1.5s;
+    -moz-animation:    increase 1.5s; 
+    -o-animation:      increase 1.5s; 
+    animation:         increase 1.5s; 
+    animation-fill-mode: forwards;
+}
+@keyframes increase {
+    100% {
+        height: 100%;
+    }
+}
