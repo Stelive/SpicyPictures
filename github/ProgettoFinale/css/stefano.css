@@ -48,3 +48,22 @@ p.contactInfo {
     font-size: 15px;
     line-height: 6px;
 }
+
+.googleMap {
+    position: relative;
+}
+.googleMap:after {
+    content: '';
+    display: block;
+    border-left: 3px solid red;
+    /*border-bottom: 3px solid red;*/
+    width: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+  
+  .googleMap:hover:after { 
+    width: 100%; 
+  }
