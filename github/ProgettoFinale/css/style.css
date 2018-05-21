@@ -485,7 +485,7 @@ height:250px;
 
 
 /* ====  Page layout ==== */
-.page-wrap{
+.page-wrap {
   padding: 9%;
   background-image: url("../img/SAM_3723pane+pedro.jpg");
   background-size: 100%;
@@ -493,46 +493,46 @@ height:250px;
   
 }
 
-.home{
-height: 60%;
-position: relative;
-background-color: rgb(255, 255, 255);
-display: flex;
-justify-content: center;
-align-items: center;
+.home {
+  height: 60%;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-.home:before{
-position: absolute;
-width: 50%;
-height: 100%;
-z-index: 10;
-top: 0;
-left: 0;
-content: '';
-background-color: rgb(255, 255, 255);
+.home:before {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: rgb(255, 255, 255);
 }
-.home:after{
-position: absolute;
-width: 50%;
-height: 100%;
-z-index: 10;
-top: 0;
-right: 0;
-content: '';
-background-color: rgb(255, 255, 255);
+.home:after {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  content: '';
+  background-color: rgb(255, 255, 255);
 }
 .animate-border{
-border: 40px solid rgb(237, 235, 230);
-transition: border .5s .2s ease;
+  border: 40px solid rgb(237, 235, 230);
+  transition: border .5s .2s ease;
 }
 .home.divide:before{
-transition: all .3s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-width: 0;
+  transition: all .3s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  width: 0;
 }
 .home.divide:after{
-transition: all .3s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-width: 0;
+  transition: all .3s 1.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  width: 0;
 }
 .text-wrap{
   width: 100%;
@@ -540,7 +540,7 @@ width: 0;
   text-align: center;
 }
 
-p{
+p {
   font-size: 1rem;
   color: #141414;
   line-height: 1.4;
