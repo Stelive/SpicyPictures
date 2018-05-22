@@ -97,5 +97,44 @@ p.contactInfo {
 
     }
 }
-
 /*.contactUsTitleheader:hover + */
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactForm form {
+    width: 80%;
+}
+
+.spicyInput {
+    margin-bottom: 30px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #E32C2B;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+input:focus {
+    border-color: #E32C2B;
+}
+
+.inputName input {
+    width: 90%;
+}
