@@ -10,6 +10,15 @@
 div.container{
   width: auto;
 }
+.topnav {
+  overflow: hidden;
+}
+
+
+
+div.topnav ul.menuUl li.iconaBurger a.icon i.fa.fa-bars {
+  display: none;
+}
 
 .spicyHeader {
   display: flex;

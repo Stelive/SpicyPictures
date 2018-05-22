@@ -6,6 +6,7 @@
  * ...
  */
 
+ 
 $('.googleMap').ready(function() {
     // Handler for .load() called.
     

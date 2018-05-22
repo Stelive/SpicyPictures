@@ -1,3 +1,48 @@
+*{
+	padding: 0;
+}
+
+div#contenitore{
+	width: auto;
+}
+
+header{
+	width: auto;
+}
+
+nav {
+	width: auto;
+}
+
+main{
+	width: auto;
+}
+aside{
+	width: 100%;
+}
+
 html{
     font-size: 92.5%;
+  }
+
+  div.topnav ul.menuUl li.menuItem a.menuItem{
+    display: none;
+  }
+  div.topnav ul.menuUl li.iconaBurger a.icon i.fa.fa-bars {
+    float: right;
+    display: flex;
+  }
+
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive ul.menuUl li.iconaBurger a.icon i.fa.fa-bars {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive ul.menuUl li.menuItem a.menuItem {
+    float: left;
+    display: flex;
+    text-align: center;
+    font-size: 19px;
   }
