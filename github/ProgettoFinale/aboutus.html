@@ -18,30 +18,30 @@
 <body>
     
     <div class="sfondo">
-            <div class="loading">
-                    <img src="Solo_peperoncino.png" class="soloPeperoncino">
-                </div>
-                </div>
+        <div class="loading">
+            <img src="Solo_peperoncino.png" class="soloPeperoncino">
+        </div>
+    </div>
 
 <div class="container">
 <header class="spicyHeader">
-        <img src="LOGO_6.png" class="logo">
+    <img src="LOGO_6.png" class="logo">
     <nav>
-            <div class="topnav" id="myTopnav">
-                    <ul class="menuUl">
-                        <li class="menuItem"> <a href="index.html" class="menuItem"> Home </a></li>
-                        <li class="menuItem active"> <a href="aboutus.html" class="menuItem"> About Us </a></li>
-                        <li class="menuItem"> <a href="ourSkill.html" class="menuItem"> Our Skill </a></li>
-                        <li class="menuItem"> <a href="ourWorks.html" class="menuItem"> Our Works </a></li>
-                        <li class="menuItem"> <a href="contactUs.html" class="menuItem"> Contact Us </a></li> 
-                        <li class="menuItem iconaBurger">  
-                          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                          </a> 
-                        </li>
-                    </ul>
-                  </div>
-</nav>
+        <div class="topnav" id="myTopnav">
+            <ul class="menuUl">
+                <li class="menuItem"> <a href="index.html" class="menuItem"> Home </a></li>
+                <li class="menuItem active"> <a href="aboutus.html" class="menuItem"> About Us </a></li>
+                <li class="menuItem"> <a href="ourSkill.html" class="menuItem"> Our Skill </a></li>
+                <li class="menuItem"> <a href="ourWorks.html" class="menuItem"> Our Works </a></li>
+                <li class="menuItem"> <a href="contactUs.html" class="menuItem"> Contact Us </a></li> 
+                <li class="menuItem iconaBurger">  
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 
@@ -189,7 +189,7 @@
                     opacity : 0.1,
                     translateY: "-80px"
                 }, {
-                    duration: 400,
+                    duration: 400, //400
                     complete: function(){
                         $('div.sfondo').velocity({
                             translateY : "-100%"
@@ -203,8 +203,11 @@
                         })  
                     }
                 })
-            },500)
+            },500) //500
         })
+        /*$(window).load(function(){
+            $('.home').addClass('animate-border divide');
+        })*/
     </script>
     <script src="js/main.js"></script>
 </body>

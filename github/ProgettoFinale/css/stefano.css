@@ -94,7 +94,6 @@ p.contactInfo {
 @keyframes increase {
     100% {
         height: 100%;
-
     }
 }
 /*.contactUsTitleheader:hover + */
@@ -115,6 +114,7 @@ p.contactInfo {
     /*margin-bottom: 30px;*/
     font-size: 20px;
     width: 100%;
+    position: relative;
 }
 
 .flexDiv {
@@ -127,13 +127,33 @@ p.contactInfo {
     width: 100%;
     /*margin: 0 auto;*/
     outline: 0;
-    border-width: 0 0 2px;
-    border-color: #E32C2B;
+    border: 0;
+    /*border-bottom: 2px solid #E32C2B;*/
     height: 40px;
     font-size: 20px;
     text-align: center;
 }
-generalInput:focus {
+
+.spicyInput::after {
+    content:"";
+    position: absolute;
+    border-bottom:3px solid red;
+    width:0%;
+    text-align:center;
+    animation: line 2s linear forwards;
+}
+@keyframes line {
+    from {
+        left:50%;
+        width:0%;
+    }
+    to {
+        left:0%;
+        width:100%;
+    }
+}
+
+.generalInput:focus {
     border-color: #E32C2B;
 }
 
@@ -166,6 +186,25 @@ generalInput:focus {
     background-color: #fffafa;
 }
 
+  /************* ABOUT US RESPONSIVE **************/
+  @media screen and (max-width: 700px) {
+    .custom-select-wrapper {
+        margin-top: 2%;
+    }
+    .flexDiv {
+        display: block;
+    }
+    .inputCompany {
+        width: 100%;
+    }
+    .spicyInput {
+        margin: 5% auto;
+    }
+    .inputName {
+        width: 100%;
+    }
+}
+
 /********** CUSTOM SELECT BOX ************/
 
 .custom-select-wrapper {
@@ -180,6 +219,14 @@ generalInput:focus {
     position: relative;
     display: inline-block;
 }
+.custom-select::after {
+    content:"";
+    position: absolute;
+    border-bottom:3px solid red;
+    width:0%;
+    text-align:center;
+    animation: line 2s linear forwards;
+}
 .custom-select-trigger {
     position: relative;
     display: block;
@@ -192,7 +239,7 @@ generalInput:focus {
     line-height: 62px;
     background: #ffffff;
     border-radius: 0;
-    border-bottom: 2px solid #e32c2b;
+    /*border-bottom: 2px solid #e32c2b;*/
 }
 .custom-select-trigger:after {
     position: absolute;

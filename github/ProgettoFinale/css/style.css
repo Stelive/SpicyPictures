@@ -14,8 +14,6 @@ div.container{
   overflow: hidden;
 }
 
-
-
 div.topnav ul.menuUl li.iconaBurger a.icon i.fa.fa-bars {
   display: none;
 }
@@ -42,7 +40,6 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-
 
 .menuItem {
   float: left;
@@ -310,13 +307,14 @@ figure.lavori * {
 }
 figure.lavori:before {
   position: absolute;
-  top: 10px;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   top: 100%;
   content: '';
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: #8282827a;
+  /* rgba(51, 51, 51, 0.9);*/
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-transition-delay: 0.25s;
@@ -354,7 +352,7 @@ figure.lavori h3 {
 }
 figure.lavori h5 {
   font-weight: normal;
-  background-color: #ae895d;
+  background-color: #e32c2b;
   padding: 3px 10px;
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -370,7 +368,7 @@ figure.lavori a {
   z-index: 1;
 }
 figure.lavori:hover:before {
-  top: 10px;
+  top: 0px;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
@@ -453,9 +451,9 @@ Used jQuery's window.load() function, in this demo there is also setTimeot(), ca
 
 /* ====  Preloader styles ==== */
 div.sfondo{
-
   width: 100%;
   height: 100%;
+  /*background-color: rgb(0, 0, 0, 0);*/
   background-color: #252328;
   position: fixed;
   z-index: 999;
