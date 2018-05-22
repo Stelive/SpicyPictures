@@ -103,6 +103,8 @@ p.contactInfo {
     display: flex;
     justify-content: center;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contactForm form {
@@ -110,20 +112,20 @@ p.contactInfo {
 }
 
 .spicyInput {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     font-size: 20px;
     width: 100%;
 }
 
 .flexDiv {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-input {
+.generalInput {
     display: block;
     width: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     outline: 0;
     border-width: 0 0 2px;
     border-color: #E32C2B;
@@ -131,10 +133,162 @@ input {
     font-size: 20px;
     text-align: center;
 }
-input:focus {
+generalInput:focus {
     border-color: #E32C2B;
 }
 
-.inputName input {
-    width: 90%;
+.inputName {
+    /*margin: 0 auto;*/
+    width: 45%;
+}
+.inputEmail {
+    margin: 9% auto;
+}
+
+.inputCompany {
+    width: 50%;
+}
+
+.spicySubmit {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    /* outline: 0; */
+    border-width: 2px;
+    border-color: #E32C2B;
+    height: 49px;
+    font-size: 20px;
+    /* text-align: center; */
+    margin-top: 10%;
+}
+.spicySubmit:hover {
+    cursor: pointer;
+    background-color: #fffafa;
+}
+
+/********** CUSTOM SELECT BOX ************/
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+.custom-select-wrapper select {
+    display: none;
+}
+.custom-select {
+    position: relative;
+    display: inline-block;
+}
+.custom-select-trigger {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 62px;
+    padding: 0 84px 0 22px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    line-height: 62px;
+    background: #ffffff;
+    border-radius: 0;
+    border-bottom: 2px solid #e32c2b;
+}
+.custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 10px; height: 10px;
+    top: 50%; right: 25px; /*top: 15%;*/
+    margin-top: -3px;
+    border-bottom: 1px solid #e32c2b;
+    border-right: 1px solid #e32c2b;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all .4s ease-in-out;
+    transform-origin: 50% 0;
+}
+.custom-select.opened .custom-select-trigger:after {
+    margin-top: 3px;
+    transform: rotate(-135deg) translateY(-50%);
+}
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%; left: 0; right: 0;
+    min-width: 100%;
+    margin: 15px 0;
+    border: 1px solid #e32c2b;
+    border-radius: 0;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px rgba(0,0,0,.07);
+    background: #fff;
+    transition: all .4s ease-in-out;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+}
+.custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(0);
+}
+.custom-options:before {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: 100%; right: 25px;
+    width: 7px; height: 7px;
+    margin-bottom: -4px;
+    border-top: 1px solid #b5b5b5;
+    border-left: 1px solid #b5b5b5;
+    background: #fff;
+    transform: rotate(45deg);
+    transition: all .4s ease-in-out;
+}
+.option-hover:before {
+    background: #f9f9f9;
+}
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px;
+    border-bottom: 1px solid #e32c2b;
+    font-size: 18px;
+    font-weight: 600;
+    color:black;
+    line-height: 47px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.custom-option:first-of-type {
+    border-radius: 0;
+}
+.custom-option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0;
+}
+.custom-option:hover,
+.custom-option.selection {
+    background: #f9f9f9;
+}
+
+/********** TABLE ************/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }

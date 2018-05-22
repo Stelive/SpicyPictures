@@ -64,18 +64,34 @@
                     <form>
                         <div class="flexDiv">
                             <div class="spicyInput inputName">
-                                    Name
-                                    <input name="firstname" type="text">
+                                Name
+                                <input class="generalInput" name="firstname" type="text">
                             </div>
                             <div class="spicyInput inputName">
-                                    Surname
-                                    <input name="surname" type="text">
+                                Surname
+                                <input class="generalInput" name="surname" type="text">
                             </div>
                         </div>
-                                <div class="spicyInput">
-                                    Email
-                                    <input name="email" type="email">
+                        <div class="spicyInput inputEmail">
+                            Email
+                            <input class="generalInput" name="email" type="email">
+                        </div>
+                        <div class="flexDiv">
+                            <div class="spicyInput inputCompany">
+                                Company Name (optional)
+                                <input class="generalInput" name="companyName" type="text">
                             </div>
+                            <select name="sources" id="sources" class="custom-select sources" placeholder="Type of Work">
+                                <option value="Musical Video">Musical Video</option>
+                                <option value="Documentary">Documentary</option>
+                                <option value="Photo Set">Photo Set</option>
+                                <option value="Screenplay">Screenplay</option>
+                                <option value="Wedding Video">Wedding Video</option>
+                                <option value="Editing">Editing</option>
+                                <option value="Other...">Other</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Submit" class="spicySubmit">
                     </form>
                 </div>
             </div>
