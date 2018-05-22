@@ -49,11 +49,11 @@ footer{
       top: 0;
     }
     .topnav.responsive ul.menuUl li.menuItem a.menuItem {
-      float: left;
-      display: flex;
+      display: inline-block;
       text-align: center;
-      font-size: 19px;
-    }
+      margin-right: 8%;
+  }
+
   
 
    div.containerLastWork{
@@ -62,3 +62,26 @@ footer{
     margin-right: auto;
     width: 50%;
     }
+
+    .info h3{
+      position: fixed;
+      font-size: 100%;
+    }
+
+    .info.bottom-right {
+      bottom: 30px;
+      right: 13%;
+    }
+
+    div.lastWork {
+      width: auto;
+  }
+   div.containerIcons{
+    width: 50%;
+  }
+
+  ul.listaIcone li i{
+    font-size: 50px;
+    color: white;
+  }
+

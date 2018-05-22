@@ -156,14 +156,7 @@ article img {
   font-size: 1.5em;
   font-style: normal;
 }
-.info.top-left {
-  top: 30px;
-  left: 30px;
-}
-.info.top-right {
-  top: 30px;
-  right: 30px;
-}
+
 .info.bottom-left {
   bottom: 30px;
   left: 30px;
@@ -410,7 +403,7 @@ footer{
 div.containerIcons{
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 40%;
   margin: 0 auto; 
   align-items: center;
   height: 200px;
@@ -498,7 +491,7 @@ height:250px;
   padding: 9%;
   background-image: url("../img/SAM_3723pane+pedro.jpg");
   background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: round
   
 }
 

@@ -41,8 +41,12 @@ html{
     top: 0;
   }
   .topnav.responsive ul.menuUl li.menuItem a.menuItem {
-    float: left;
-    display: flex;
+    display: inline-block;
     text-align: center;
-    font-size: 19px;
+    margin-right: 10%;
   }
+
+  div.containerIcons{
+    width: 60%;
+  }
+  

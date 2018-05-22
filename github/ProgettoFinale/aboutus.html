@@ -7,7 +7,7 @@
 <meta name="author" content="Francesco Panetta">
 <link rel="stylesheet" media="screen" href="css/style.css" />
 <link rel="stylesheet" media="only screen and (max-width: 800px)" href="css/schermoPiccolo.css" />
-<link rel="stylesheet" media="only screen and (min-width: 800px)" href="css/classeGrande.css" />
+<link rel="stylesheet" media="only screen and (min-width: 800px) and (max-width: 900px) " href="css/classeGrande.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--[if lt IE 9]>
@@ -27,14 +27,20 @@
 <header class="spicyHeader">
         <img src="LOGO_6.png" class="logo">
     <nav>
-    <ul class="menuUl">
-        <li class="menuItem"> <a href="index.html"> Home </a></li>
-        <li class="menuItem active"> <a href="#"> About Us </a></li>
-        <li class="menuItem"> <a href="ourSkill.html"> Our Skill </a></li>
-        <li class="menuItem"> <a href="ourWorks.html"> Our Works </a></li>
-        <li class="menuItem"> <a href="contactUs.html"> Contact Us </a></li>
-    </ul>
-
+            <div class="topnav" id="myTopnav">
+                    <ul class="menuUl">
+                        <li class="menuItem"> <a href="index.html" class="menuItem"> Home </a></li>
+                        <li class="menuItem active"> <a href="aboutus.html" class="menuItem"> About Us </a></li>
+                        <li class="menuItem"> <a href="ourSkill.html" class="menuItem"> Our Skill </a></li>
+                        <li class="menuItem"> <a href="ourWorks.html" class="menuItem"> Our Works </a></li>
+                        <li class="menuItem"> <a href="contactUs.html" class="menuItem"> Contact Us </a></li> 
+                        <li class="menuItem iconaBurger">  
+                          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a> 
+                        </li>
+                    </ul>
+                  </div>
 </nav>
 </header>
 
@@ -149,7 +155,26 @@
 </aside>
 
 <footer>
-</footer> 
+        <h3> FOLLOW US</h3>
+        <div class="containerIcons">
+          <div class="icone facebook">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="Icons/facebook-icon-transparent-background-22.png" alt="facebbok">
+              </a>
+          </div>
+          <div class="icone youtube">
+              <a href="https://www.youtube.com/?gl=IT&hl=it" target="_blank">
+              <img src="Icons/2000px-YouTube_play_buttom_icon_(2013-2017).svg.png" alt="youtube">
+            </a>
+          </div>
+          <div class="icone instagram">
+              <a href="https://www.instagram.com/?hl=it" target="_blank">
+              <img src="Icons/instagram-new-color-flat.png" alt="instagram">
+            </a>
+          </div>
+  
+        </div>
+      </footer> 
 
 </div>
 <!-- FILE JS -->
