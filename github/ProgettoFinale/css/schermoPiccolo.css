@@ -76,9 +76,30 @@ footer{
     div.lastWork {
       width: auto;
   }
+  div.lastPhoto {
+    width: auto;
+}
+div.containerPhoto{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  div.containerVideo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    } 
+
+iframe.lastVideo {
+    width: auto;
+}
    div.containerIcons{
     width: 50%;
+    height: auto;
   }
+ 
 
   ul.listaIcone li i{
     font-size: 50px;

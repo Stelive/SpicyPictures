@@ -494,7 +494,7 @@ height:250px;
 }
 
 .home {
-  height: 60%;
+  height: auto;
   position: relative;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -650,6 +650,7 @@ table.container {
   margin: 0 auto;
 display: table;
 padding: 0 0 8em 0;
+margin-top: 3%;
 }
 
 table.container td, table.container th {
@@ -690,4 +691,116 @@ transition-delay: 0s;
   transition-duration: 0.4s;
   transition-property: all;
 transition-timing-function: line;
+}
+
+div.containerPhoto {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+div.lastPhoto{
+   width: 32%;
+}
+
+div.lastPhoto img{
+  width: 100%;
+  height: auto;
+}
+
+figure.photo {
+  font-family: 'Leixo', sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px 8px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+figure.photo * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+figure.photo:before {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 100%;
+  content: '';
+  background-color: #8282827a;
+  /* rgba(51, 51, 51, 0.9);*/
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+figure.photo img {
+  backface-visibility: hidden;
+}
+figure.photo figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+figure.photo h3 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  margin-bottom: 5px;
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+figure.photo:hover:before {
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.photo:hover h3{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 2;
+}
+figure.photo:hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+div.containerVideo{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+ iframe.lastVideo{
+   width: 50%;
+   margin: 0 auto;
+   height: 50%;
+ }
+
+ div.containerPhotoNature{
+  width: 32%;
 }
