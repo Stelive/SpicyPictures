@@ -674,7 +674,7 @@ table.container th {
 }
 
 table.container tr:hover {
- background-color: #000;
+ /*background-color: #000;*/
 -webkit-box-shadow: 0 6px 6px -6px #1119(8, 67, 230);
    -moz-box-shadow: 0 6px 6px -6px #0E1119;
         box-shadow: 0 6px 6px -6px #0E1119;
@@ -682,7 +682,7 @@ table.container tr:hover {
 table.container td:hover {
 background-color: #E32C2B;
 color:white;
-font-weight: bold;
+/*font-weight: bold;*/
 
 box-shadow: #E32C2B -1px 1px, #E32C2B -2px 2px, #E32C2B -3px 3px, #E32C2B -4px 4px, #E32C2B -5px 5px, #E32C2B -6px 6px;
 transform: translate3d(6px, -6px, 0);
